@@ -39,3 +39,18 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* Change text selection color */
+::selection {
+    background-color: #076678;
+}
+
+/* For Firefox compatibility */
+:-moz-selection {
+    background-color: #076678;
+}
+
+/* Reset selection color for child elements */
+body *::selection {
+    background-color: inherit;
+}
